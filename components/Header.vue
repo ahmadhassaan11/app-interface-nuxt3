@@ -3,7 +3,7 @@
     <div class="flex flex-col sm:flex-row justify-between items-center bg-transparent py-3 text-white font-bold">
       <div class="text-lg">NETSOL</div>
       <div class="relative mt-4 sm:mt-0"> 
-        <button @click="toggleDropdown" class="text-white font-bold py-2 px-4 rounded-full transition duration-300" style="background: radial-gradient(circle, #0025CE 0%, rgba(9, 93, 230, 0.53) 100%);">
+        <button @click="toggleDropdown" class="text-white font-extralight py-2 px-4 rounded-full transition duration-300" style="background: radial-gradient(circle, #0025CE 0%, rgba(9, 93, 230, 0.53) 100%);">
           Regions
         </button>
         <div v-if="isDropdownVisible" class="absolute top-full mt-2 w-full bg-white bg-opacity-10 text-white font-thin rounded-lg shadow-lg">

@@ -5,12 +5,12 @@
             <div class="flex justify-center items-center">
                 <div class="text-center">
                     <button
-                        class="mt-4 bg-black hover:bg-blue-600 text-white text-sm py-2 px-4 rounded-full transition duration-300">News
+                        class="mt-4 bg-black hover:bg-blue-800 text-white text-sm py-2 px-4 rounded-full transition duration-300">News
                         and Insights</button>
                     <h1 class="text-xl sm:text-2xl md:text-3xl pt-2 font-semibold mt-2 text-white">Latest Insights from Leading Voices</h1>
                     <p class="mt-2 text-gray-300">Solving the world's problems through technology wouldn't be possible
                         without our most important invention: the NetSol. Have a look at our talented teams.</p>
-                    <p class="text-xs pt-3 tracking-wider text-white underline">View All News</p>
+                    <p class="text-xs pt-3 tracking-wider text-white underline cursor-pointer hover:text-cyan-300">View All News</p>
                 </div>
             </div>
         </div>
