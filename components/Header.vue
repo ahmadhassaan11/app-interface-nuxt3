@@ -1,19 +1,19 @@
 <template>
-  <div class="container mx-auto">
-    <div class="flex justify-between items-center bg-transparent py-3 text-white font-bold">
-      <div>NETSOL</div>
-      <div class="relative"> 
-        <button @click="toggleDropdown" class="mt-4 text-white font-bold py-2 px-4 rounded-full transition duration-300" style="background: radial-gradient(163.75% 163.75% at 23.45% 140%, #0025CE 0%, rgba(9, 93, 230, 0.53) 100%);">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col sm:flex-row justify-between items-center bg-transparent py-3 text-white font-bold">
+      <div class="text-lg">NETSOL</div>
+      <div class="relative mt-4 sm:mt-0"> 
+        <button @click="toggleDropdown" class="text-white font-bold py-2 px-4 rounded-full transition duration-300" style="background: radial-gradient(circle, #0025CE 0%, rgba(9, 93, 230, 0.53) 100%);">
           Regions
         </button>
-        <div v-if="isDropdownVisible" class="absolute mt-1 w-full bg-white bg-opacity-10 text-white font-thin rounded-lg shadow-lg">
+        <div v-if="isDropdownVisible" class="absolute top-full mt-2 w-full bg-white bg-opacity-10 text-white font-thin rounded-lg shadow-lg">
           <ul>
-            <li v-for="region in regions" :key="region.code" @click="selectRegion(region)" class="block py-2 px-4 hover:text-cyan-300 underline">
+            <li v-for="region in regions" :key="region.code" @click="selectRegion(region)" class="block py-2 px-4 hover:text-cyan-300 underline cursor-pointer">
               {{ region.name }}
             </li>
           </ul>
         </div>
-
+        
       </div>
     </div>
     <div class="border-b border-gray-800"></div>
